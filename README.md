@@ -14,7 +14,7 @@ Like this:
 2. Edit `config.php`.
 
 ## Configuration
-Just add `statistics` to `plugins` array in gonfig.php
+Just add `statistics` to `plugins` array in `config.php`
 ```php
 # config.php
 return array(
