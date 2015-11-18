@@ -1,24 +1,24 @@
 <?php
 
 /**
- * Statistics plugin
+ *  Statistics plugin for Morfy
  *
  *  @package Morfy
  *  @subpackage Plugins
  *  @author Pavel Belousov / pafnuty
- *  @copyright 2014 - 2015 Romanenko Sergey / Awilum
- *  @version 1.0.0
+ *  @version 2.0.0
+ *  @license https://github.com/pafnuty/morfy-statistics/blob/master/LICENSE MIT
  *
  */
 
 require_once PLUGINS_PATH . '/statistics/ShowStatistics.php';
 
-Morfy::factory()->addAction('before_render', function () {
+Morfy::addAction('plugins_loaded', function () {
     global $statistics;
     $statistics = new ShowStatistics();
 });
 
-Morfy::factory()->addAction('after_render', function () {
+Morfy::addAction('after_render', function () {
     global $statistics;
     echo $statistics->showStat();
 });
