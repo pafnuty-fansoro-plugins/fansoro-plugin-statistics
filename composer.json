@@ -17,5 +17,8 @@
   ],
   "support": {
     "issues": "https://github.com/pafnuty-morfy-plugins/morfy-statistics/issues"
+  },
+  "require": {
+    "php": ">=5.5"
   }
 }
