@@ -6,7 +6,7 @@
  *  @package Morfy
  *  @subpackage Plugins
  *  @author Pavel Belousov / pafnuty
- *  @version 2.0.0
+ *  @version 3.0.0
  *  @license https://github.com/pafnuty/morfy-statistics/blob/master/LICENSE MIT
  *
  */
