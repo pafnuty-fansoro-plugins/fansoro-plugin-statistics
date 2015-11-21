@@ -1,0 +1,24 @@
+{
+  "name": "morfy-statistics",
+  "description": "Statistics Plugin for Morfy CMS",
+  "keywords": [
+    "morfy",
+    "morfy-plugin",
+    "php",
+  ],
+  "homepage": "https://github.com/pafnuty-morfy-plugins/morfy-statistics",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pavel Belousov",
+      "email": "pafnuty10@gmail.com",
+      "homepage": "https://github.com/pafnuty"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/pafnuty-morfy-plugins/morfy-statistics/issues"
+  },
+  "require": {
+    "morfy-cms/morfy": ">=2.0.0"
+  },
+}
