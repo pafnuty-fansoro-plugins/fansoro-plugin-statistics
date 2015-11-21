@@ -19,6 +19,6 @@
     "issues": "https://github.com/pafnuty-morfy-plugins/morfy-statistics/issues"
   },
   "require": {
-    "morfy-cms/morfy": ">=2.0.0"
-  },
+    "morfy-cms/morfy": "2.*"
+  }
 }
