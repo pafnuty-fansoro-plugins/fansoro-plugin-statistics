@@ -13,12 +13,12 @@
 
 require_once PLUGINS_PATH . '/statistics/ShowStatistics.php';
 
-Morfy::addAction('plugins_loaded', function () {
+Action::add('plugins_loaded', function () {
     global $statistics;
     $statistics = new ShowStatistics();
 });
 
-Morfy::addAction('after_render', function () {
+Action::add('after_page_rendered', function () {
     global $statistics;
     echo $statistics->showStat();
 });
