@@ -1,10 +1,11 @@
-<?
+<?php
+
 /**
  * Statistics class
+ *
  * @author Павел Белоусов <pafnuty10@gmail.com>
  */
-class ShowStatistics
-{
+class ShowStatistics {
     /**
      * @var string
      */
@@ -15,8 +16,7 @@ class ShowStatistics
      */
     public $memoryStart;
 
-    public function __construct()
-    {
+    public function __construct() {
         $this->timeStart   = $this->timer();
         $this->memoryStart = $this->getMemory();
     }
@@ -28,10 +28,10 @@ class ShowStatistics
      *
      * @return float|mixed
      */
-    public function timer($stop = false)
-    {
+    public function timer($stop = false) {
         return ($stop) ? (microtime(true) - $stop) : microtime(true);
     }
+
     /**
      * Подсчитываем затраты памяти
      *
@@ -39,8 +39,7 @@ class ShowStatistics
      *
      * @return int|string
      */
-    public function getMemory($stop = false)
-    {
+    public function getMemory($stop = false) {
         if (function_exists('memory_get_usage')) {
             return ($stop) ? (memory_get_usage() - $stop) : memory_get_usage();
         }
@@ -50,13 +49,12 @@ class ShowStatistics
 
     /**
      * Показываем статистику
+     *
      * @return string
      */
-    public function showStat()
-    {
+    public function showStat() {
         $timerStart   = $this->timeStart;
         $statistics[] = 'Run time: ' . round($this->timer($timerStart), 5) . ' s.';
-        $memory       = (!function_exists('memory_get_usage')) ? 'unknown' : round(memory_get_usage() / 1024 / 1024, 2) . ' Mb';
         if (function_exists("memory_get_usage")) {
             $statistics[] = 'Memory consumption: ' . round($this->getMemory($this->memoryStart) / 1024 / 1024, 3) . ' Mb';
         }
