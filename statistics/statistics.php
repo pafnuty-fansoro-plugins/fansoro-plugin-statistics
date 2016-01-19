@@ -1,13 +1,13 @@
 <?php
 
 /**
- *  Statistics plugin for Morfy
+ *  Statistics plugin for Fansoro
  *
- * @package    Morfy
+ * @package    Fansoro
  * @subpackage Plugins
  * @author     Pavel Belousov / pafnuty
- * @version    3.0.1
- * @license    https://github.com/pafnuty-morfy-plugins/morfy-statistics/blob/master/LICENSE MIT
+ * @version    3.1.0
+ * @license    https://github.com/pafnuty-fansoro-plugins/fansoro-statistics/blob/master/LICENSE MIT
  *
  */
 
